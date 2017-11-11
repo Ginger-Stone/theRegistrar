@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/enroll_student"
+            android:title="Enroll Students" />
+        <item
+            android:id="@+id/view_enrolled"
+            android:title="View Enrolled" />
+        <item
+            android:id="@+id/manage_admins"
+            android:title="Manage Admins" />
+        <item
+            android:id="@+id/auth_reports"
+            android:title="Auth Reports" />
+    </group>
+
+    <item android:title="Preferrence">
+        <menu>
+            <item
+                android:id="@+id/system_settings"
+                android:title="System Settings" />
+            <item
+                android:id="@+id/about_system"
+                android:title="About" />
+        </menu>
+    </item>
+
+</menu>

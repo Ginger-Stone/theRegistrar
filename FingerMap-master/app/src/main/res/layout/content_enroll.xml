@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="ke.co.imond.fingermap.EnrollActivity"
+    tools:showIn="@layout/activity_enroll">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:id="@+id/layout1">
+
+        <TextView
+            android:id="@+id/regNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Stu Reg"
+            android:width="80dp" />
+
+        <EditText
+            android:id="@+id/reg_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_below="@+id/layout1"
+        android:id="@+id/layout2">
+
+        <TextView
+            android:id="@+id/firstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="First Name"
+            android:width="80dp" />
+
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/layout2"
+        android:id="@+id/layout3">
+
+        <TextView
+            android:id="@+id/lastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Last Name"
+            android:width="80dp" />
+
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/layout3"
+        android:id="@+id/layout4">
+
+        <TextView
+            android:id="@+id/parentPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Parents Contacts"
+            android:width="80dp" />
+
+        <EditText
+            android:id="@+id/parent_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/layout4"
+        android:id="@+id/layout5">
+
+        <TextView
+            android:id="@+id/classLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Class"
+            android:width="80dp" />
+
+        <EditText
+            android:id="@+id/class_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonEnroll"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#222"
+        android:elevation="11dp"
+        android:text="Add Student"
+        android:textAllCaps="false"
+        android:textColor="#fdab20"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginRight="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/enrolledThumb"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/buttonView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#222"
+        android:elevation="11dp"
+        android:text="View Students"
+        android:textAllCaps="false"
+        android:textColor="#fdab20"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/buttonEnroll"
+        android:layout_alignLeft="@+id/buttonEnroll"
+        android:layout_alignStart="@+id/buttonEnroll" />
+
+    <ImageButton
+        android:id="@+id/thumbFP"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/buttonEnroll"
+        android:layout_alignStart="@+id/buttonEnroll"
+        android:layout_below="@+id/layout5"
+        android:layout_marginTop="11dp"
+        app:srcCompat="@mipmap/msign" />
+
+    <EditText
+        android:id="@+id/enrolledThumb"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:layout_below="@+id/thumbFP"
+        android:layout_alignLeft="@+id/thumbFP"
+        android:layout_alignStart="@+id/thumbFP" />
+
+
+    <ImageButton
+        android:id="@+id/indexFP"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignEnd="@+id/buttonEnroll"
+        android:layout_alignRight="@+id/buttonEnroll"
+        android:layout_alignTop="@+id/thumbFP"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        app:srcCompat="@mipmap/msign" />
+
+    <EditText
+        android:id="@+id/enrolledIndex"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:layout_below="@+id/indexFP"
+        android:layout_alignLeft="@+id/indexFP"
+        android:layout_alignStart="@+id/indexFP" />
+
+    <TextView
+        android:id="@+id/thumb_fp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/thumbFP"
+        android:layout_alignLeft="@+id/thumbFP"
+        android:layout_alignStart="@+id/thumbFP"
+        android:text="Thumb" />
+
+    <TextView
+        android:id="@+id/index_fp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Index"
+        android:layout_alignBottom="@+id/indexFP"
+        android:layout_alignLeft="@+id/indexFP"
+        android:layout_alignStart="@+id/indexFP" />
+
+</RelativeLayout>

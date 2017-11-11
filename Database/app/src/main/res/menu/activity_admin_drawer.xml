@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Enroll Student" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Add Facilitator" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Add Administrator" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Generate Reports" />
+    </group>
+
+    <item android:title="Clocks">
+        <menu>
+            <item
+                android:id="@+id/clockin"
+                android:icon="@drawable/clockin"
+                android:title="Clock Ins" />
+            <item
+                android:id="@+id/clockout"
+                android:icon="@drawable/clockout"
+                android:title="Clock Outs" />
+            <item
+                android:id="@+id/emergency"
+                android:icon="@drawable/emergency"
+                android:title="Emergencies" />
+        </menu>
+    </item>
+
+</menu>

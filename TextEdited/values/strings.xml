@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Register</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_facilitator">FacilitatorActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_main2">Facilitator</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="log_in">Log In</string>
+    <string name="password">Password:</string>
+    <string name="please_login">Please Login</string>
+    <string name="username">Username:</string>
+    <string name="clock_in">Clock In</string>
+    <string name="clock_out">Clock Out</string>
+    <string name="emergency">Emergency</string>
+</resources>

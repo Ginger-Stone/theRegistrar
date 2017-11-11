@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="ke.co.imond.fingermap.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="373dp"
+        android:layout_height="125dp"
+        app:srcCompat="@android:drawable/btn_star_big_off"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <Button
+        android:id="@+id/addstudent"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:layout_weight="0.85"
+        android:background="#b40000"
+        android:fontFamily="cursive"
+        android:lineSpacingExtra="8sp"
+        android:text="Enroll Student"
+        android:textAllCaps="false"
+        android:textColor="?attr/colorBackgroundFloating"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <Button
+        android:id="@+id/view_students"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addstudent"
+        android:layout_alignStart="@+id/addstudent"
+        android:layout_centerVertical="true"
+        android:layout_weight="0.85"
+        android:background="#b40000"
+        android:fontFamily="cursive"
+        android:lineSpacingExtra="8sp"
+        android:text="View Students"
+        android:textAllCaps="false"
+        android:textColor="?attr/colorBackgroundFloating"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <ImageButton
+        android:id="@+id/sign_in"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/view_students"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/view_students"
+        android:layout_marginBottom="60dp"
+        app:srcCompat="@mipmap/msign" />
+
+    <ImageButton
+        android:id="@+id/sign_out"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignEnd="@+id/view_students"
+        android:layout_alignRight="@+id/view_students"
+        android:layout_alignTop="@+id/sign_in"
+        app:srcCompat="@mipmap/msign" />
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/signout"
+        android:layout_alignBottom="@+id/signout"
+        android:layout_alignLeft="@+id/sign_in"
+        android:layout_alignStart="@+id/sign_in"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:text="Clock In" />
+
+    <TextView
+        android:id="@+id/signout"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sign_out"
+        android:layout_alignEnd="@+id/sign_out"
+        android:layout_alignRight="@+id/sign_out"
+        android:layout_marginBottom="12dp"
+        android:text="Clock Out" />
+
+</RelativeLayout>
